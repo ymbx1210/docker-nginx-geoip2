@@ -1,5 +1,5 @@
 ARG NGINX_FROM_IMAGE=nginx:stable
-FROM ${NGINX_FROM_IMAGE} as builder
+FROM --platform=linux/arm64/v8 nginx:stable as builder
 
 ARG ENABLED_MODULES=geoip2
 
