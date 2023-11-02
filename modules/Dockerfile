@@ -1,7 +1,7 @@
-ARG NGINX_FROM_IMAGE=nginx:mainline
+ARG NGINX_FROM_IMAGE=nginx:stable
 FROM ${NGINX_FROM_IMAGE} as builder
 
-ARG ENABLED_MODULES
+ARG ENABLED_MODULES=geoip2
 
 RUN set -ex \
     && if [ "$ENABLED_MODULES" = "" ]; then \
