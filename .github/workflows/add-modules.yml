@@ -24,4 +24,4 @@ jobs:
           file: ./modules/Dockerfile
           platforms: linux/arm64
           push: true
-          tags: user/app:latest
+          tags: ymbx1210/nginx-geoip2:latest
